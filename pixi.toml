@@ -1,0 +1,12 @@
+[project]
+name = "pixi-task-cache-cwd"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Hofer-Julian <julianhofer@gnome.org>"]
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tasks]
+start = { cmd = "echo Hello >> ../folder_a/a.txt", cwd = "folder_b", inputs = ["b.py"], outputs = ["../folder_a/a.txt"]}
+
+[dependencies]
